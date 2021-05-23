@@ -1,9 +1,11 @@
 const display = () => {}
 let data = [];
 let results = document.getElementById('results')
+/* need to set up the calls so they don't call at the same time on every refresh of the page*/
 
 //brownsburg
-fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdcdf1939e6485", {
+
+//fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdcdf1939e6485", {
   "method": "GET",
   "headers": {
     "x-rapidapi-key": "3ec19f0389msh7b3a40819ec9bfep18bdedjsnf2a96f4f0c72",
@@ -24,7 +26,7 @@ fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdc
 
 
 //clermont
-           fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdcdf1939e648d", {
+     //      fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdcdf1939e648d", {
             "method": "GET",
             "headers": {
               "x-rapidapi-key": "3ec19f0389msh7b3a40819ec9bfep18bdedjsnf2a96f4f0c72",
@@ -45,7 +47,7 @@ fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdc
 
   
 //speedway
-          fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822ac41fdcdf1939e64fc", {
+      //    fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822ac41fdcdf1939e64fc", {
             "method": "GET",
             "headers": {
               "x-rapidapi-key": "3ec19f0389msh7b3a40819ec9bfep18bdedjsnf2a96f4f0c72",
@@ -65,7 +67,7 @@ fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822aa41fdc
           });
 
 //zionsville
-          fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822ac41fdcdf1939e650a", {
+      //    fetch("https://airvisual1.p.rapidapi.com/cities/get-information?id=5bc822ac41fdcdf1939e650a", {
             "method": "GET",
             "headers": {
               "x-rapidapi-key": "3ec19f0389msh7b3a40819ec9bfep18bdedjsnf2a96f4f0c72",
